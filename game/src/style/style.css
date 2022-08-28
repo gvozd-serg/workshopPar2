@@ -1,0 +1,80 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+svg {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    overflow: visible;
+    stroke: black;
+    z-index: 0;
+}
+
+.stage {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /*visibility: hidden;*/
+    background-color: #feebcb;
+}
+
+#bHoop {
+    stroke-width: 5;
+}
+
+.shadow {
+    fill: rgba(0, 0, 0, 0.6);
+    stroke: none;
+}
+
+#net {
+    fill: none;
+    stroke: #ccc;
+    stroke-miterlimit: 10;
+}
+
+#ring {
+    fill: red;
+    stroke: none;
+}
+
+#ball {
+    cursor: pointer;
+    fill: red;
+    stroke: none;
+}
+
+.ballPath {
+    clip-path: url(#clip-path);
+}
+
+.ballStripe {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+.copy {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.copy li {
+    width: calc(100% / 3);
+}

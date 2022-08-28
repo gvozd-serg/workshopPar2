@@ -1,0 +1,16 @@
+body {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup {
+    position: absolute;
+}
+
+#btn {
+    position: absolute;
+    top: 40px;
+}
